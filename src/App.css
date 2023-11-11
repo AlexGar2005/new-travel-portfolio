@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+.App-header {
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 2rem;
+}
+.carousel-images {
+  position: relative;
+  height: 99%;
+  width: 99%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide_direction {
+  display: flex;
+  justify-content: space-between;
+}
+.left,
+.right {
+  background-color: #fb666675;
+  color: #fff;
+  padding: 10px 8px 8px 13px;
+  margin: 0 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 10px;
+  height: 25px;
+  width: 25px;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+.carousel-indicator {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.dot {
+  background-color: #333;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1280px) {
+  .dot {
+    width: 12px;
+    height: 12px;
+  }
+}
+.active {
+  background-color: #fa2020;
+}
+.shad {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.triangle {
+  height: 0;
+  width: 0;
+  border-bottom: 200px solid #EDF3FF;
+  border-left: 200px solid transparent;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.triangle-2 {
+  height: 0;
+  width: 0;
+  border-right: 200px solid transparent;
+  border-bottom: 200px solid #FFF4DE;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1280px) {
+  .dot {
+    width: 12px;
+    height: 12px;
+  }
+  .triangle {
+    border-bottom: 125px solid #EDF3FF;
+    border-left: 125px solid transparent;
+    margin-bottom: 25px;
+  }
+  .triangle-2 {
+    border-right: 125px solid transparent;
+    border-bottom: 125px solid #FFF4DE;
+    margin-bottom: 25px;
+  }
+}
+
